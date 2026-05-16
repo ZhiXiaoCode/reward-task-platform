@@ -2,6 +2,9 @@
 
 🎯 基于 FastAPI + UniApp 的悬赏任务平台
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FZhiXiaoCode%2Freward-task-platform)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FZhiXiaoCode%2Freward-task-platform)
+
 ## 📱 项目简介
 
 这是一个**全新的悬赏任务平台**，完全基于自建API开发，不依赖任何第三方服务。
@@ -51,6 +54,19 @@ reward-task-platform/
 ├── QUICK_START.md
 └── DEPLOYMENT_CHECKLIST.md
 ```
+
+## 🚀 立即部署
+
+### 一键部署（推荐）
+
+| 服务 | 平台 | 一键部署 |
+|------|------|---------|
+| **后端** | Railway | [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FZhiXiaoCode%2Freward-task-platform) |
+| **前端** | Vercel | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FZhiXiaoCode%2Freward-task-platform) |
+
+### 详细部署指南
+
+查看 [STEP_BY_STEP_DEPLOY.md](STEP_BY_STEP_DEPLOY.md) 获取每一步的详细说明。
 
 ## 📄 许可证
 

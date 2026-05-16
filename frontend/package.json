@@ -1,0 +1,16 @@
+{
+  "name": "reward-task-platform",
+  "version": "1.0.0",
+  "description": "悬赏任务平台 - UniApp前端",
+  "main": "main.js",
+  "scripts": {
+    "dev": "echo 'Use HBuilderX to run this project'",
+    "build": "echo 'Use HBuilderX to build this project'"
+  },
+  "dependencies": {
+    "uview-ui": "^2.0.31"
+  },
+  "devDependencies": {},
+  "author": "Reward Task Platform Team",
+  "license": "MIT"
+}

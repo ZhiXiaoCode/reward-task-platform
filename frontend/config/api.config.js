@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8011/api'
+const BASE_URL = 'https://reward-task-platform-production.up.railway.app/api'
 
 const API_ENDPOINTS = {
 	auth: {
@@ -44,3 +44,4 @@ const API_ENDPOINTS = {
 }
 
 export default API_ENDPOINTS
+

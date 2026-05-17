@@ -87,8 +87,8 @@ def init_database():
 def start_server():
     """启动服务器"""
     print("\n🚀 启动服务器...")
-    print("   后端地址: http://localhost:8000")
-    print("   API文档:  http://localhost:8000/docs")
+    print("   后端地址: http://localhost:8080")
+    print("   API文档:  http://localhost:8080/docs")
     print("   按 Ctrl+C 停止服务")
     print()
     

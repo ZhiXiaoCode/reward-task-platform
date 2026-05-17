@@ -2,10 +2,10 @@ import uvicorn
 import sys
 import os
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'backend'))
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", "8011"))
+    port = int(os.getenv("PORT", "8080"))
     print("=" * 50)
     print("🏆 悬赏任务平台 - 后端服务")
     print("=" * 50)

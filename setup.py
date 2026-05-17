@@ -1,0 +1,24 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="reward-task-platform",
+    version="3.0.0",
+    description="悬赏任务平台 - 自建API版本",
+    packages=find_packages(),
+    install_requires=[
+        "fastapi>=0.100.0",
+        "uvicorn[standard]>=0.20.0",
+        "sqlalchemy>=2.0.0",
+        "python-jose[cryptography]>=3.3.0",
+        "passlib[bcrypt]>=1.7.0",
+        "python-multipart>=0.0.6",
+        "pydantic>=2.0.0",
+        "pydantic-settings>=2.0.0",
+        "bcrypt>=4.0.0"
+    ],
+    entry_points={
+        "console_scripts": [
+            "reward-platform=backend.run:main",
+        ],
+    },
+)

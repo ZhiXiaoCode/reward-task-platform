@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     
     DATABASE_URL: str = "sqlite:///./reward_task.db"
     
-    SECRET_KEY: str = secrets.token_urlsafe(32)
+    SECRET_KEY: str = os.getenv("SECRET_KEY", "reward-task-platform-secret-key-2024-production-secure")
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     REFRESH_TOKEN_EXPIRE_DAYS: int = 7

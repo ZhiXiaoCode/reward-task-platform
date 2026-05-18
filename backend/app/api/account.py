@@ -4,7 +4,7 @@ API路由 - 账户模块
 
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
-from sqlalchemy import desc
+from sqlalchemy import desc, func
 from app.core.database import get_db
 from app.core.security import get_current_user
 from app.models.models import User, Transaction, WithdrawalRequest
@@ -14,15 +14,36 @@ router = APIRouter(prefix="/account", tags=["账户"])
 
 
 @router.get("/balance", response_model=ResponseModel)
-async def get_balance(current_user: User = Depends(get_current_user)):
+async def get_balance(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
     """获取账户余额"""
+    total_income = db.query(func.sum(Transaction.amount)).filter(
+        Transaction.user_id == current_user.id,
+        Transaction.amount > 0
+    ).scalar() or 0.0
+    
+    total_expense = db.query(func.sum(func.abs(Transaction.amount))).filter(
+        Transaction.user_id == current_user.id,
+        Transaction.amount < 0
+    ).scalar() or 0.0
+    
+    total_withdraw = db.query(func.sum(WithdrawalRequest.amount)).filter(
+        WithdrawalRequest.user_id == current_user.id,
+        WithdrawalRequest.status == "completed"
+    ).scalar() or 0.0
+    
+    calculated_balance = total_income - total_expense
+    
     return ResponseModel(
         code=1,
         msg="获取成功",
         data={
             "balance": current_user.balance,
-            "total_income": current_user.balance + 100.0,
-            "total_withdraw": 0.0
+            "total_income": round(total_income, 2),
+            "total_expense": round(total_expense, 2),
+            "total_withdraw": round(total_withdraw, 2)
         }
     )
 

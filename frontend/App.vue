@@ -14,6 +14,7 @@ export default {
 
 <style>
 @import url('./static/css/common.css');
+@import url('./static/css/iconfont.css');
 
 page {
 	background-color: #f5f5f5;

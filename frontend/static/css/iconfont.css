@@ -1,0 +1,96 @@
+/* iconfont 图标库 */
+@font-face {
+  font-family: "iconfont";
+  src: url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAALsAAsAAAAABmgAAAKeAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqBJIEVATYCJAMICwYABCAFhG0HMBuQBciO1EZBZBY+8zzP7/f+bO4TkqpJn9VNVFK1SkZEInEoESqRiEj0H/H8/N7v575zgGtuAgBdgKIE0CUAXYBoAbQJQBeglAC0CUBIuUZmJfRnNzC9K9t9/f//d9v3v/7f79v3//79v3//b9//+///d9v3//79v3//b9v3//7///3fb9//+/b9//2/f//v//d9v3//79v3//b9v3//v//3fb9//+/b9//2/f//v//d9v3//79v3//b9v3//7///3fb9//+/b9//2/f//v//d9v3//79v3//b9v3//v//3fb9//+/b9//2/f//v//d9v3//79v3//b9v3//7///3fb9//+/b9//2/f') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e67c";
+}
+
+.icon-message:before {
+  content: "\e636";
+}
+
+.icon-home:before {
+  content: "\e6bb";
+}
+
+.icon-task:before {
+  content: "\e6bc";
+}
+
+.icon-user:before {
+  content: "\e6bd";
+}
+
+.icon-back:before {
+  content: "\e6be";
+}
+
+.icon-close:before {
+  content: "\e6bf";
+}
+
+.icon-check:before {
+  content: "\e6c0";
+}
+
+.icon-edit:before {
+  content: "\e6c1";
+}
+
+.icon-delete:before {
+  content: "\e6c2";
+}
+
+.icon-add:before {
+  content: "\e6c3";
+}
+
+.icon-refresh:before {
+  content: "\e6c4";
+}
+
+.icon-money:before {
+  content: "\e6c5";
+}
+
+.icon-time:before {
+  content: "\e6c6";
+}
+
+.icon-location:before {
+  content: "\e6c7";
+}
+
+.icon-phone:before {
+  content: "\e6c8";
+}
+
+.icon-star:before {
+  content: "\e6c9";
+}
+
+.icon-share:before {
+  content: "\e6ca";
+}
+
+.icon-camera:before {
+  content: "\e6cb";
+}
+
+.icon-image:before {
+  content: "\e6cc";
+}

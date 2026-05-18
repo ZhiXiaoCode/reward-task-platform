@@ -53,6 +53,8 @@ app.include_router(auth.router, prefix="/api")
 app.include_router(user.router, prefix="/api")
 app.include_router(task.router, prefix="/api")
 app.include_router(account.router, prefix="/api")
+app.include_router(notification.router, prefix="/api")
+app.include_router(system.router, prefix="/api")
 
 @app.get("/")
 async def root():

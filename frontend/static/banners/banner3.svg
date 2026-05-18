@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 300">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="750" height="300" fill="url(#grad3)"/>
+  <text x="375" y="120" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" font-weight="bold">邀请好友</text>
+  <text x="375" y="180" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.8)" text-anchor="middle">邀请好友双方各得奖励</text>
+  <circle cx="580" cy="130" r="35" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="620" cy="170" r="35" fill="rgba(255,255,255,0.3)"/>
+  <text x="600" y="160" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">+¥</text>
+</svg>
